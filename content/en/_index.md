@@ -58,7 +58,7 @@ sections:
   - block: collection
     id: papers
     content:
-      title: Featured Publications
+      title: Featured Papers
       filters:
         folders:
           - publication
@@ -115,24 +115,6 @@ sections:
       # Reduce spacing
       spacing:
         padding: [0, 0, 0, 0]
-  - block: markdown
-    content:
-      title: 'Academic Services'
-      subtitle: ''
-      text: |
-        - 2025: Program Co-Chair at VMIL 2025
-        - 2025: Program Committee at PPL Workshop 2025
-        - 2024: External Reviewer at Programming Journal Volume 8
-        - 2024: Artifact Evaluation Commitee at Programming Journal Volume 8
-        - 2024: Reviewer at ACM TACO
-        - 2024: Reviewer at TOSEM
-        - 2024: Program Committee at MPLR 2024
-        - 2024: Program Committee at MoreVMs 2024
-        - 2023: Program Committee at ICCQ 2024
-        - 2023: Program Committee at ICSME 2023 Industry Track
-        - 2023: Program Committee at ICCQ 2023
-    design:
-      columns: '1'
   - block: cta-card
     demo: true # Only display this section in the Hugo Blox Builder demo site
     content:

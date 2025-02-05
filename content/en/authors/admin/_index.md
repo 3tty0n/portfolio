@@ -89,6 +89,44 @@ work:
     date_end: 2024-03-31
     summary:
 
+skills:
+  - name: Technical Skills
+    items:
+  - name: Hobbies
+    color: '#eeac02'
+    color_border: '#f0bf23'
+    items:
+      - name: Birds
+        description: ''
+        percent: 100
+        # icon: bird
+      - name: Climbing
+        description: ''
+        percent: 80
+        # icon: climbinge
+
+skills:
+  - name: Technical Skills
+    items:
+      - name: programming language design
+        percent: 100
+      - name: (JIT) compiler implementation
+        percent: 100
+      - name: performance analysis
+        percent: 100
+  - name: Hobbies
+    color: '#eeac02'
+    color_border: '#f0bf23'
+    items:
+      - name: Coffee
+        description: ''
+        percent: 60
+      - name: Birds
+        description: ''
+        percent: 100
+      - name: Climbing
+        description: ''
+        percent: 80
 
 # Awards.
 #   Add/remove as many awards below as you like.
