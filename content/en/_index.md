@@ -17,7 +17,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
-        url: https://www.yuiza.org/cv/yizawa.pdf
+        url: https://3tty0n.github.io/cv/yizawa.pdf
     design:
       css_class: dark
       background:
