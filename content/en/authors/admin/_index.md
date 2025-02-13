@@ -159,4 +159,4 @@ awards:
 
 ## About Me
 
-Yusuke Izawa is an assistant professor at Tokyo Metropolitan University. His research interests include programming language, virtual machine design and implementation, and software engineering. He works together with Programming Research Group at Institute of Science Toyo and Irie and Kadomoto laboratory at the University of Tokyo.
+Yusuke Izawa is an assistant professor at Tokyo Metropolitan University. His research interests include programming language, virtual machine design and implementation, and software engineering. He works together with Programming Research Group at Institute of Science Tokyo and Irie/Kadomoto laboratory at the University of Tokyo.
