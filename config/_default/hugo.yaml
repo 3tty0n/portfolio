@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Website name
-title: Yusuke Izawa's profile site
+title: Yusuke Izawa's Profile Site
 # Website URL
 baseURL: 'https://me.yizawa.tokyo/'
 
