@@ -11,7 +11,7 @@ featured: true
 publicationDate: '2025-02-28T00:00:00Z'
 
 publication_types: ['paper-conference']
-publication: In Proceedings of the 39th European Conference on Object-Oriented Programming
+publication: In 39th European Conference on Object-Oriented Programming
 publication_short: In ECOOP 2025
 abstract: |
     Meta-compiler frameworks can generate high-performance virtual machines (VMs) from interpreter definitions. Despite the success of frameworks such as RPython and Graal/Truffle, creating multi-tier JIT compilation VMs within these frameworks remains challenging. Traditional high-performance VMs address this by using multiple compilers that are optimized for different trade-offs between compilation speed and code quality. Replicating this structure in meta-compiler frameworks, however, involves substantial development effort.
