@@ -26,10 +26,9 @@ summary: |
 
     We validate our approach with 2SOM, a two-level compilation VM for Simple Object Machine. 2SOM incorporates two JIT compilers: a tier-1 threaded code generator that quickly produces subroutine threaded code for warm-up phase, and tier-2 tracing JIT compiler that optimizes frequently executed loops. Our performance evaluation, using a program with a realistic workload, showed that 2SOM improved warm-up performance by 15\% from an RPython-based VM in compensation for a peak performance reduction of merely 5\%.
 tags:
-- meta-compielr framework
+- meta-compiler framework
 
-projects:
-- Adaptive RPython
+projects: [arpython]
 
 url_pdf: ''
 url_code: ''
@@ -39,3 +38,7 @@ url_project: ''
 url_slides: ''
 url_source: ''
 ---
+
+<!-- {{% callout note %}} -->
+<!-- ECOOP is Europe’s longest-standing annual Programming Languages conference, bringing together researchers, practitioners, and students to share their ideas and experiences in all topics related to programming languages, software development, systems and applications. -->
+<!-- {{% /callout %}} -->

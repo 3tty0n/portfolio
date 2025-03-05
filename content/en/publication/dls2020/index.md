@@ -14,7 +14,7 @@ authors:
 #   - 'Equal contribution'
 
 date: '2020-11-15T00:00:00Z'
-doi: ''
+doi: '10.1145/3426422.3426977'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2020-11-15T00:00:00Z'
@@ -38,7 +38,7 @@ abstract: |
     We evaluated its performance by creating a small functional programming language with BacCaml and running microbenchmark programs. Furthermore, we performed a synthetic experiment to confirm that there are programs that run faster by hybrid compilation.
 
 # Summary. An optional shortened abstract.
-summary: |
+summary: |-
     Most virtual machines employ just-in-time (JIT) compilers to achieve high-performance. Trace-based compilation and method-based compilation are two major compilation strategies in JIT compilers. In general, the former excels in compiling programs with more in-depth method calls and more dynamic branches, while the latter is suitable for a wide range of programs. Some previous studies have suggested that each strategy has its advantages and disadvantages, and there is no clear winner.
 
     In this paper, we present a new approach, namely, the meta-hybrid JIT compilation strategy. It combines trace-based and method-based compilations to utilize the advantages of both strategies. Moreover, it is realized as a meta JIT compiler framework; thus, we can generate a VM with a hybrid JIT compiler that can apply different program parts by merely writing an interpreter with our framework.
@@ -58,7 +58,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: ''
+url_pdf: 'https://arxiv.org/pdf/2011.03516'
 url_code: ''
 url_dataset: ''
 url_poster: ''
@@ -79,8 +79,7 @@ url_source: ''
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects:
-  - Adaptive RPython
+projects: [arpython]
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
@@ -90,12 +89,12 @@ projects:
 # slides: example
 ---
 
-{{% callout note %}}
-Click the _Cite_ button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-{{% /callout %}}
+<!-- {{% callout note %}} -->
+<!-- Click the _Cite_ button above to demo the feature to enable visitors to import publication metadata into their reference management software. -->
+<!-- {{% /callout %}} -->
 
-{{% callout note %}}
-Create your slides in Markdown - click the _Slides_ button to check out the example.
-{{% /callout %}}
+<!-- {{% callout note %}} -->
+<!-- Create your slides in Markdown - click the _Slides_ button to check out the example. -->
+<!-- {{% /callout %}} -->
 
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
+<!-- Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). -->

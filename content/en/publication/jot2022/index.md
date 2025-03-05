@@ -27,7 +27,8 @@ summary: Language implementation frameworks, e.g., RPython and Truffle/Graal, ar
 
 tags:
 - meta-compiler framework
-featured: true
+- RPython
+featured: false
 
 # links:
 # - name: ""
@@ -62,7 +63,6 @@ projects: [Adaptive RPython]
 #   Otherwise, set `slides: ""`.
 # slides: example
 ---
-
 <!--
 
 {{% callout note %}}
