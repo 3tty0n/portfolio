@@ -3,7 +3,7 @@ title: 'BacCaml: The Meta-Hybrid Just-in-Time Compiler'
 authors:
 - Yusuke Izawa
 date: '2019-04-02'
-publishDate: '2025-03-05T15:27:59.464441Z'
+publishDate: '2025-03-05T15:48:28.232767Z'
 publication_types:
 - paper-conference
 publication: '*Proceedings of the Conference Companion of the 3rd International Conference

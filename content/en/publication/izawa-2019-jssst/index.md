@@ -3,7 +3,7 @@ title: A Stack Hybridization for Meta-hybrid Just-in-time Compilation
 authors:
 - Yusuke Izawa AND Hidehiko Masuhara AND Tomoyuki Aotani AND Youyou Cong
 date: '2019-08-27'
-publishDate: '2025-03-05T15:27:59.470624Z'
+publishDate: '2025-03-05T15:48:28.237263Z'
 publication_types:
 - paper-conference
 publication: '*Proceedings of the 36th JSSST Annual Conference*'
