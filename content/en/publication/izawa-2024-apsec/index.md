@@ -3,7 +3,7 @@ title: Designing a Reactive Programming Language for Shape-Adaptive Computers
 
 # Authors
 # A YAML list of author names
-# If you created a profile for a user (e.g. the default `admin` user at `content/authors/admin/`), 
+# If you created a profile for a user (e.g. the default `admin` user at `content/authors/admin/`),
 # write the username (folder name) here, and it will be replaced with their full name and linked to their profile.
 authors:
 - Yusuke Izawa AND Junichiro Kadomoto AND Hidetsugu Irie
@@ -82,4 +82,3 @@ image:
 projects: []
 ---
 
-Add the **full text** or **supplementary notes** for the publication here using Markdown formatting.
