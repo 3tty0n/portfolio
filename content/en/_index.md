@@ -73,16 +73,6 @@ sections:
       # Reduce spacing
       spacing:
         padding: [0, 0, 0, 0]
-  #- block: collection
-  #  content:
-  #    title: Recent Publications
-  #    text: ""
-  #    filters:
-  #      folders:
-  #        - publication
-  #      exclude_featured: false
-  #  design:
-  #    view: citation
   - block: collection
     id: papers
     content:
@@ -94,6 +84,26 @@ sections:
     design:
       view: article-grid
       columns: 2
+  - block: collection
+    content:
+      title: Recent Publications
+      text: ""
+      filters:
+        folders:
+          - publication
+        exclude_featured: false
+    design:
+      view: citation
+  #- block: collection
+  #  id: talks
+  #  content:
+  #    title: Recent & Upcoming Talks
+  #    filters:
+  #      folders:
+  #        - event
+  #  design:
+  #    view: article-grid
+  #    columns: 1
   #- block: collection
   #  id: projects
   #  content:
@@ -105,14 +115,4 @@ sections:
   #    design:
   #      view: article-grid
   #      column: 2
-  # - block: collection
-  #   id: talks
-  #   content:
-  #     title: Recent & Upcoming Talks
-  #     filters:
-  #       folders:
-  #         - event
-  #   design:
-  #     view: article-grid
-  #     columns: 1
 ---
