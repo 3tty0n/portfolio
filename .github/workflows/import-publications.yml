@@ -33,7 +33,7 @@ jobs:
       - name: Run Academic (Bibtex To Markdown Converter)
         # Check `.bib` file exists for case when action runs on `.bib` deletion
         # Note GH only provides hashFiles func in `steps.if` context, not `jobs.if` context
-        if: ${{ hashFiles('publications.bib') != '' }}
+        if: ${{ hashFiles('publication.bib') != '' }}
         run: |
           academic import publication.bib content/en/publication/ --compact
           academic import publication_featured.bib content/en/publication/ --compact --featured
