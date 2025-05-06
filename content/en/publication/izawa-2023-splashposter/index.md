@@ -7,7 +7,7 @@ authors:
 - Hidetsugu Irie
 - Shuichi Sakai
 date: '2023-08-30'
-publishDate: '2025-03-05T15:48:28.212890Z'
+publishDate: '2025-05-06T17:36:23.876249Z'
 publication_types:
 - paper-conference
 publication: '*SPLASH Companion 2023*'
