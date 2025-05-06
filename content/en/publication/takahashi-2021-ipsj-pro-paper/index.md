@@ -4,7 +4,7 @@ title: An approach to collect object graphs for data-structure live programming 
 authors:
 - Shusuke Takahashi AND Yusuke Izawa AND Hidehiko Masuhara AND Youyou Cong
 date: '2022-06-15'
-publishDate: '2025-03-05T15:48:28.202635Z'
+publishDate: '2025-05-06T17:36:23.861582Z'
 publication_types:
 - article-journal
 publication: '*Journal of Information Processing*'
