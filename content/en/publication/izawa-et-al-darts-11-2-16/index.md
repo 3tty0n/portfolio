@@ -6,12 +6,14 @@ authors:
 - Hidehiko Masuhara
 - Carl Friedrich Bolz-Tereick
 date: '2025-01-01'
-publishDate: '2025-09-07T20:10:50.729022Z'
+publishDate: '2025-09-07T20:31:55.088411Z'
 publication_types:
 - article-journal
 publication: '*Dagstuhl Artifacts Series*'
 doi: 10.4230/DARTS.11.2.16
-featured: true
+tags:
+- JIT compiler
+- Adaptive RPython
 links:
 - name: URL
   url: https://drops.dagstuhl.de/entities/document/10.4230/DARTS.11.2.16

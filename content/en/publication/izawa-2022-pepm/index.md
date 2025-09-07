@@ -5,7 +5,7 @@ authors:
 - Hidehiko Masuhara
 - Carl Friedrich Bolz-Tereick
 date: '2022-01-17'
-publishDate: '2025-09-07T20:10:50.530007Z'
+publishDate: '2025-09-07T20:31:55.115664Z'
 publication_types:
 - paper-conference
 publication: '*The ACM SIGPLAN Workshop on Partial Evaluation and Program Manipulation*'
