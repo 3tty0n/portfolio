@@ -3,7 +3,7 @@ title: Designing a Reactive Programming Language for Shape-Adaptive Computers
 authors:
 - Yusuke Izawa AND Junichiro Kadomoto AND Hidetsugu Irie
 date: '2024-12-03'
-publishDate: '2025-05-06T17:36:24.076105Z'
+publishDate: '2025-09-07T20:10:50.743591Z'
 publication_types:
 - paper-conference
 publication: '*31st Asia-Pacific Software Engineering Conference, Early Research Achievement

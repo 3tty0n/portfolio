@@ -3,7 +3,7 @@ title: Threaded Code Generation with a Meta-Tracing JIT Compiler
 authors:
 - Yusuke Izawa AND Hidehiko Masuhara AND Carl Friedrich Bolz-Tereick AND Youyou Cong
 date: '2022-02-01'
-publishDate: '2025-05-06T17:36:23.869075Z'
+publishDate: '2025-09-07T20:10:50.516602Z'
 publication_types:
 - article-journal
 publication: '*Journal of Object Technology*'

@@ -4,7 +4,7 @@ title: 'Stack Hybridization: A Mechanism for Bridging Two Compilation Strategies
 authors:
 - Yusuke Izawa
 date: '2020-01-01'
-publishDate: '2025-05-06T17:36:23.855485Z'
+publishDate: '2025-09-07T20:10:50.503298Z'
 publication_types:
 - thesis
 ---
