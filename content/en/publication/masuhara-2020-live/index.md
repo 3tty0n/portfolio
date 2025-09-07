@@ -3,7 +3,7 @@ title: Toward a Multi-Language and Multi-Environment Framework for Live Programm
 authors:
 - Hidehiko Masuhara AND Shusuke Takahashi AND Yusuke Izawa AND Youyou Cong
 date: '2020-01-01'
-publishDate: '2025-09-07T20:10:50.537385Z'
+publishDate: '2025-09-07T20:31:55.122986Z'
 publication_types:
 - paper-conference
 publication: '*Proceedings of the 6th Workshop on Live Programming*'
