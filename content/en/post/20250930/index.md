@@ -7,3 +7,7 @@ authors:
 tags:
 - academic
 ---
+
+Our short paper entitled "VisMorph: A Live Programming Environment for Shape-Adaptive Computers" is accepted to UIST '25.
+
+We look forward to meeting you in Busan, Korea!
