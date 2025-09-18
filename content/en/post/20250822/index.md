@@ -1,7 +1,7 @@
 ---
 Title: Presentation at UIST'25
 summary: Our poster is accepted to UIST'25
-date: 2025-09-30
+date: 2025-08-22
 authors:
 - admin
 tags:
