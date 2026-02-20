@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allTeaching = (await getCollection('teaching'))
+  .sort((a, b) => b.data.sortDate.valueOf() - a.data.sortDate.valueOf());
+---
+
+<BaseLayout title="Teaching">
+  <section class="py-12">
+    <h1 class="text-3xl font-bold text-primary mb-8">Teaching</h1>
+
+    <div class="space-y-3">
+      {allTeaching.map(entry => (
+        <div class="bg-surface rounded-lg border border-border p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+          <div>
+            <p class="font-medium text-sm">{entry.data.course}</p>
+            <p class="text-xs text-text-muted mt-1">Role: {entry.data.role} &middot; {entry.data.institution}</p>
+          </div>
+          <span class="text-xs text-accent whitespace-nowrap">{entry.data.semester}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

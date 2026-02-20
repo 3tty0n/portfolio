@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { journalArticles, conferenceProceedings, theses, talks } from '../data/publications';
+---
+
+<BaseLayout title="Publications">
+  <section class="py-12">
+    <h1 class="text-3xl font-bold text-primary mb-8">Publications</h1>
+
+    <h2 class="text-lg font-semibold text-text mb-3">Journal Articles</h2>
+    <div class="space-y-3 mb-10">
+      {journalArticles.map(pub => (
+        <div class="bg-surface rounded-lg border border-border p-4">
+          <p class="font-medium text-sm leading-snug mb-1">{pub.title}</p>
+          <p class="text-xs text-text-muted">{pub.authors}</p>
+          <p class="text-xs text-accent font-medium mt-1">{pub.venue}, {pub.year}</p>
+          <div class="flex gap-3 mt-2">
+            {pub.doi && <a href={`https://doi.org/${pub.doi}`} target="_blank" rel="noopener noreferrer" class="text-xs text-primary hover:underline">DOI</a>}
+            {pub.arxiv && <a href={`https://arxiv.org/abs/${pub.arxiv}`} target="_blank" rel="noopener noreferrer" class="text-xs text-primary hover:underline">arXiv</a>}
+            {pub.link && !pub.doi && <a href={pub.link} target="_blank" rel="noopener noreferrer" class="text-xs text-primary hover:underline">Link</a>}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <h2 class="text-lg font-semibold text-text mb-3">Conference Proceedings</h2>
+    <div class="space-y-3 mb-10">
+      {conferenceProceedings.map(pub => (
+        <div class="bg-surface rounded-lg border border-border p-4">
+          <p class="font-medium text-sm leading-snug mb-1">{pub.title}</p>
+          <p class="text-xs text-text-muted">{pub.authors}</p>
+          <p class="text-xs text-accent font-medium mt-1">{pub.venue}, {pub.year}</p>
+          <div class="flex gap-3 mt-2">
+            {pub.doi && <a href={`https://doi.org/${pub.doi}`} target="_blank" rel="noopener noreferrer" class="text-xs text-primary hover:underline">DOI</a>}
+            {pub.arxiv && <a href={`https://arxiv.org/abs/${pub.arxiv}`} target="_blank" rel="noopener noreferrer" class="text-xs text-primary hover:underline">arXiv</a>}
+            {pub.link && !pub.doi && <a href={pub.link} target="_blank" rel="noopener noreferrer" class="text-xs text-primary hover:underline">Link</a>}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <h2 class="text-lg font-semibold text-text mb-3">Theses</h2>
+    <div class="space-y-3 mb-10">
+      {theses.map(pub => (
+        <div class="bg-surface rounded-lg border border-border p-4">
+          <p class="font-medium text-sm leading-snug mb-1">{pub.title}</p>
+          <p class="text-xs text-text-muted">{pub.authors}</p>
+          <p class="text-xs text-accent font-medium mt-1">{pub.venue}, {pub.year}</p>
+        </div>
+      ))}
+    </div>
+
+    <h2 class="text-lg font-semibold text-text mb-3">Talks &amp; Workshops</h2>
+    <div class="space-y-3">
+      {talks.map(pub => (
+        <div class="bg-surface rounded-lg border border-border p-4">
+          <div class="flex items-start justify-between gap-2">
+            <div>
+              <p class="font-medium text-sm leading-snug mb-1">{pub.title}</p>
+              <p class="text-xs text-text-muted">{pub.authors}</p>
+              <p class="text-xs text-accent font-medium mt-1">{pub.venue}, {pub.year}</p>
+            </div>
+            {pub.isInvited && <span class="text-[10px] text-accent border border-accent/40 rounded px-1.5 py-0.5 whitespace-nowrap">Invited</span>}
+            {pub.isRefereed && <span class="text-[10px] text-primary border border-primary/40 rounded px-1.5 py-0.5 whitespace-nowrap">Refereed</span>}
+          </div>
+          <div class="flex gap-3 mt-2">
+            {pub.arxiv && <a href={`https://arxiv.org/abs/${pub.arxiv}`} target="_blank" rel="noopener noreferrer" class="text-xs text-primary hover:underline">arXiv</a>}
+            {pub.link && <a href={pub.link} target="_blank" rel="noopener noreferrer" class="text-xs text-primary hover:underline">Link</a>}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
