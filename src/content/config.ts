@@ -39,4 +39,8 @@ const services = defineCollection({
   type: 'content',
 });
 
-export const collections = { blog, home, supervision, teaching, services };
+const projects = defineCollection({
+  type: 'content',
+});
+
+export const collections = { blog, home, supervision, teaching, services, projects };

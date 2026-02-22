@@ -22,13 +22,13 @@ const { Content: ContactContent } = await render(contactEntry);
 
   <!-- Hero -->
   <section class="py-20 sm:py-28 text-center">
-    <div class="relative w-32 mx-auto mb-6">
+    <div class="relative w-40 mx-auto mb-6">
       <img
-        src="https://www.gravatar.com/avatar/2e48799142b3ceb254000b2d6a802d3c?s=256"
+        src="https://www.gravatar.com/avatar/2e48799142b3ceb254000b2d6a802d3c?s=320"
         alt="Yusuke Izawa"
-        class="w-32 h-32 rounded-full object-cover border-2 border-border"
+        class="w-40 h-40 rounded-full object-cover border-2 border-border"
       />
-      <span class="absolute bottom-1 right-1 w-7 h-7 flex items-center justify-center rounded-full bg-black text-sm" aria-hidden="true">☕</span>
+      <span class="absolute bottom-1 right-1 w-8 h-8 flex items-center justify-center rounded-full bg-black text-base" aria-hidden="true">☕</span>
     </div>
     <h1 class="text-4xl sm:text-5xl font-bold text-primary mb-4">{heroEntry.data.title}</h1>
     <p class="text-xl text-text-muted mb-4">{heroEntry.data.role}</p>
@@ -46,13 +46,13 @@ const { Content: ContactContent } = await render(contactEntry);
   </section>
 
   <!-- About -->
-  <section id="about" class="py-16 scroll-mt-20">
+  <section id="about" class="py-16 scroll-mt-20 text-center">
     <h2 class="text-2xl font-bold text-primary mb-6">About</h2>
-    <div class="max-w-3xl">
+    <div class="max-w-3xl mx-auto">
       <div class="text-text-muted leading-relaxed mb-6 [&>p]:mb-0">
         <AboutContent />
       </div>
-      <div class="grid sm:grid-cols-2 gap-4">
+      <div class="grid sm:grid-cols-2 gap-4 text-left">
         <div class="bg-surface rounded-lg border border-border p-4">
           <h3 class="font-semibold mb-2">Research Interests</h3>
           <ul class="text-sm text-text-muted space-y-1">
@@ -74,9 +74,9 @@ const { Content: ContactContent } = await render(contactEntry);
   </section>
 
   <!-- Selected Publications -->
-  <section id="publications" class="py-16 scroll-mt-20">
+  <section id="publications" class="py-16 scroll-mt-20 text-center">
     <h2 class="text-2xl font-bold text-primary mb-6">Selected Publications</h2>
-    <div class="space-y-3">
+    <div class="space-y-3 text-left">
       {selectedPubs.map(pub => (
         <div class="bg-surface rounded-lg border border-border p-4">
           <p class="font-medium text-sm leading-snug mb-1">{pub.title}</p>
@@ -94,12 +94,12 @@ const { Content: ContactContent } = await render(contactEntry);
   </section>
 
   <!-- Blog -->
-  <section id="blog" class="py-16 scroll-mt-20">
+  <section id="blog" class="py-16 scroll-mt-20 text-center">
     <h2 class="text-2xl font-bold text-primary mb-6">Recent Posts</h2>
     {posts.length === 0 ? (
       <p class="text-text-muted">No posts yet.</p>
     ) : (
-      <div class="grid gap-4 sm:grid-cols-2">
+      <div class="grid gap-4 sm:grid-cols-2 text-left">
         {posts.map(post => (
           <a href={`${base}blog/${post.id.replace(/\.mdx?$/, '')}/`} class="block bg-surface rounded-lg border border-border p-4 hover:border-primary/50 transition-colors">
             <time class="text-xs text-text-muted">
@@ -115,9 +115,9 @@ const { Content: ContactContent } = await render(contactEntry);
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-16 scroll-mt-20">
+  <section id="contact" class="py-16 scroll-mt-20 text-center">
     <h2 class="text-2xl font-bold text-primary mb-6">Contact</h2>
-    <div class="grid sm:grid-cols-2 gap-6 max-w-3xl">
+    <div class="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto text-left">
       <div class="bg-surface rounded-lg border border-border p-5">
         <h3 class="font-semibold mb-3">Get in Touch</h3>
         <ul class="text-sm text-text-muted space-y-2">
