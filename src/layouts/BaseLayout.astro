@@ -32,6 +32,14 @@ const { title, description = 'Academic portfolio of Yusuke Izawa — JIT compila
         }
       })();
     </script>
+    <!-- Google Analytics -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-N8JV9WN687"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-N8JV9WN687');
+    </script>
   </head>
   <body class="min-h-screen flex flex-col">
     <Nav />
