@@ -1,0 +1,89 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection, getEntry } from 'astro:content';
+
+const allSupervision = await getCollection('supervision');
+
+const levels = [
+  { key: 'phd', label: 'PhD Students', topicLabel: 'Topic' },
+  { key: 'masters', label: "Master's Students", topicLabel: 'Thesis' },
+  { key: 'bachelors', label: "Bachelor's Students", topicLabel: 'Project' },
+] as const;
+
+const allTeaching = (await getCollection('teaching'))
+  .sort((a, b) => b.data.sortDate.valueOf() - a.data.sortDate.valueOf());
+
+const servicesEntry = await getEntry('services', 'services');
+const ongoing = servicesEntry.data.services.filter((s: any) => s.ongoing);
+const past = servicesEntry.data.services.filter((s: any) => !s.ongoing);
+---
+
+<BaseLayout title="Academic">
+  <section class="py-12">
+    <h1 class="text-3xl font-bold text-primary mb-8">Supervision &amp; Mentoring</h1>
+
+    {levels.map(({ key, label, topicLabel }) => {
+      const entries = allSupervision.filter(e => e.data.level === key);
+      return entries.length > 0 && (
+        <>
+          <h2 class="text-lg font-semibold text-text mb-3">{label}</h2>
+          <div class="space-y-3 mb-10">
+            {entries.map(entry => (
+              <div class="bg-surface rounded-lg border border-border p-4">
+                <p class="font-medium text-sm">{entry.data.name}</p>
+                <p class="text-xs text-text-muted mt-1">{topicLabel}: {entry.data.topic}</p>
+                <p class="text-xs text-accent mt-1">{entry.data.period}</p>
+              </div>
+            ))}
+          </div>
+        </>
+      );
+    })}
+  </section>
+
+  <section class="py-12">
+    <h1 class="text-3xl font-bold text-primary mb-8">Teaching</h1>
+
+    <div class="space-y-3">
+      {allTeaching.map(entry => (
+        <div class="bg-surface rounded-lg border border-border p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+          <div>
+            <p class="font-medium text-sm">{entry.data.course}</p>
+            <p class="text-xs text-text-muted mt-1">Role: {entry.data.role} &middot; {entry.data.institution}</p>
+          </div>
+          <span class="text-xs text-accent whitespace-nowrap">{entry.data.semester}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="py-12">
+    <h1 class="text-3xl font-bold text-primary mb-8">Services</h1>
+
+    <h2 class="text-lg font-semibold text-text mb-3">Ongoing</h2>
+    <div class="space-y-3 mb-10">
+      {ongoing.map((entry: any) => (
+        <div class="bg-surface rounded-lg border border-border p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+          <div>
+            <p class="font-medium text-sm">{entry.name}</p>
+            <p class="text-xs text-text-muted mt-1">{entry.role}</p>
+          </div>
+          <span class="text-xs text-accent whitespace-nowrap">{entry.period}</span>
+        </div>
+      ))}
+    </div>
+
+    <h2 class="text-lg font-semibold text-text mb-3">Past</h2>
+    <div class="space-y-3">
+      {past.map((entry: any) => (
+        <div class="bg-surface rounded-lg border border-border p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+          <div>
+            <p class="font-medium text-sm">{entry.name}</p>
+            <p class="text-xs text-text-muted mt-1">{entry.role}</p>
+          </div>
+          <span class="text-xs text-accent whitespace-nowrap">{entry.period}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

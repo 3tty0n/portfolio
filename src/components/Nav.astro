@@ -2,13 +2,12 @@
 const rawBase = import.meta.env.BASE_URL;
 const base = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
 const links = [
-  { href: '#about', label: 'About' },
+  { href: `${base}#about`, label: 'About' },
   { href: `${base}publications/`, label: 'Publications' },
-  { href: `${base}supervision/`, label: 'Supervision' },
-  { href: `${base}teaching/`, label: 'Teaching' },
-  { href: `${base}services/`, label: 'Services' },
-  { href: '#blog', label: 'Blog' },
-  { href: '#contact', label: 'Contact' },
+  { href: `${base}academic/`, label: 'Academic' },
+  { href: `${base}projects/`, label: 'Projects' },
+  { href: `${base}#blog`, label: 'Blog' },
+  { href: `${base}#contact`, label: 'Contact' },
 ];
 ---
 
