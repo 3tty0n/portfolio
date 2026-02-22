@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getEntry } from 'astro:content';
+
+const projectsEntry = await getEntry('projects', 'projects');
+const projects = projectsEntry.data.projects;
+---
+
+<BaseLayout title="Projects">
+  <section class="py-12">
+    <h1 class="text-3xl font-bold text-primary mb-8">Projects</h1>
+
+    <div class="space-y-3">
+      {projects.map((entry: any) => (
+        <div class="bg-surface rounded-lg border border-border p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+          <div>
+            <p class="font-medium text-sm">{entry.name}</p>
+            <p class="text-xs text-text-muted mt-1">{entry.description}</p>
+          </div>
+          <a href={entry.url} target="_blank" rel="noopener noreferrer" class="text-xs text-accent hover:underline whitespace-nowrap">
+            View →
+          </a>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
