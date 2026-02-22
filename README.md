@@ -20,6 +20,7 @@ src/
 ├── content/          # Markdown content (edit here to update text)
 │   ├── blog/         # Blog posts
 │   ├── home/         # Home page sections (hero, about, contact)
+│   ├── projects/     # Project entries
 │   ├── services/     # Academic services & committee memberships
 │   ├── supervision/  # Supervision entries (PhD, Master's, Bachelor's)
 │   └── teaching/     # Teaching entries
@@ -27,6 +28,11 @@ src/
 ├── data/             # Structured data (publications)
 ├── layouts/          # Page layouts
 └── pages/            # Route pages
+    ├── index.astro        # Home
+    ├── academic.astro     # Academic (supervision, teaching, services)
+    ├── projects.astro     # Projects
+    ├── publications.astro # Publications
+    └── blog/              # Blog listing & posts
 ```
 
 ## Editing Content
@@ -38,8 +44,8 @@ All text content is managed via Markdown files in `src/content/`. Edit `.md` fil
 | Hero bio | `src/content/home/hero.md` |
 | About section | `src/content/home/about.md` |
 | Contact info | `src/content/home/contact.md` |
+| Projects | `src/content/projects/*.md` |
 | Services | `src/content/services/services.md` |
 | Supervision | `src/content/supervision/*.md` (one per student) |
 | Teaching | `src/content/teaching/*.md` (one per course) |
 | Blog posts | `src/content/blog/*.md` |
-
