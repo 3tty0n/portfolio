@@ -1,5 +1,7 @@
 # Yusuke Izawa — Portfolio
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/49926149-a6ae-4954-a52c-be6b855a8f22/deploy-status)](https://app.netlify.com/projects/yizawa/deploys)
+
 Personal academic portfolio site built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
 
 ## Getting Started
