@@ -8,11 +8,11 @@ education:
   - degree: "Ph.D."
     field: "Computer Science"
     year: 2023
-    institution: "Tokyo Institute of Technology"
-  - degree: "M.Eng."
+    institution: "Tokyo Institute of Technology (currently Institute of Science Tokyo)"
+  - degree: "MS."
     field: "Computer Science"
     year: 2020
-    institution: "Tokyo Institute of Technology"
+    institution: "Tokyo Institute of Technology (currently Institute of Science Tokyo)"
 ---
 
 I'm a researcher specializing in programming language implementation, with a focus on
